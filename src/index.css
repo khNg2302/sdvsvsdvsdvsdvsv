@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, .3);
+  animation: displayOverlay .15s ease-in-out;
+}
+
+.modal{
+  position: fixed;
+  inset: 0;
+}
+
+.modal_1{
+  width: 180px;
+  height: 60px;
+}
+
+.modal_content{
+  position: absolute;
+  top:14px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 12px;
+  background-color: white;
+}
+
+@keyframes displayOverlay {
+  from{
+    opacity: .5;
+  }
+  to{
+    opacity: 1;
+  }
+}
